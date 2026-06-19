@@ -1,28 +1,91 @@
+/* Selector theo thẻ */
 body {
-background-color: #eef7ff;
-font-family: Arial, sans-serif;
-color: #333333;
-text-align: center;
-margin: 20px;
+    background-color: #eef7ff;
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
 }
 
-h1 {
-color: #0066cc;
+
+/* Selector theo thẻ */
+header {
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 30px;
 }
 
+
+/* Selector theo thẻ */
+nav {
+    background-color: #023e8a;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Selector kết hợp */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+
+/* Selector hover */
+nav a:hover {
+    color: yellow;
+}
+
+
+/* Selector theo id */
+#home {
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* Selector theo thẻ */
 img {
-width: 80%;
-max-width: 800px;
-border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 10px;
 }
 
-a {
-color: #e63946;
-text-decoration: none;
-font-weight: bold;
+
+/* Selector theo class */
+.description {
+    font-size: 18px;
+    color: #555;
 }
 
-a:hover {
-text-decoration: underline;
+
+/* Selector theo id */
+#about {
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
 }
 
+
+/* Selector theo class */
+.card {
+    border: 2px solid #0077b6;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Selector kết hợp */
+.card li {
+    margin: 8px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #023e8a;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
