@@ -1,91 +1,123 @@
-/* Selector theo thẻ */
+/* Reset kích thước */
+* {
+    box-sizing: border-box;
+}
+
+
 body {
+
     background-color: #eef7ff;
+
     font-family: Arial, sans-serif;
+
     color: #333;
+
     margin: 0;
+
 }
 
 
-/* Selector theo thẻ */
-header {
+
+/* Header */
+.site-header {
+
     background-color: #0077b6;
+
     color: white;
+
     text-align: center;
+
     padding: 30px;
+
 }
 
 
-/* Selector theo thẻ */
-nav {
-    background-color: #023e8a;
-    padding: 15px;
-    text-align: center;
-}
 
+/* ID tiêu đề chính */
+#main-title {
 
-/* Selector kết hợp */
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 15px;
-}
+    font-size: 40px;
 
-
-/* Selector hover */
-nav a:hover {
     color: yellow;
+
 }
 
 
-/* Selector theo id */
-#home {
+
+/* Menu */
+.main-nav {
+
+    background-color: #023e8a;
+
+    padding: 15px;
+
     text-align: center;
-    padding: 20px;
+
 }
 
-
-/* Selector theo thẻ */
-img {
-    width: 80%;
-    max-width: 900px;
-    border-radius: 10px;
-}
-
-
-/* Selector theo class */
-.description {
-    font-size: 18px;
-    color: #555;
-}
-
-
-/* Selector theo id */
-#about {
-    background-color: white;
-    padding: 20px;
-    margin: 20px;
-}
-
-
-/* Selector theo class */
-.card {
-    border: 2px solid #0077b6;
-    padding: 20px;
-    border-radius: 10px;
-}
 
 
 /* Selector kết hợp */
-.card li {
-    margin: 8px;
+.main-nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin: 15px;
+
+    font-weight: bold;
+
 }
 
 
-/* Footer */
-footer {
-    background-color: #023e8a;
-    color: white;
-    text-align: center;
-    padding: 15px;
+
+.main-nav a:hover {
+
+    color: yellow;
+
+}
+
+
+
+/* Ảnh đại diện */
+.hero {
+
+    width: 80%;
+
+    max-width: 900px;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* Danh sách chủ đề */
+.topic-list {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+}
+
+
+
+/* Selector kết hợp */
+.topic-list li {
+
+    margin: 10px;
+
+}
+
+
+
+/* About */
+#about {
+
+    padding: 20px;
+
 }
