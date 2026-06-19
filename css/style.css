@@ -1,123 +1,29 @@
-/* Reset kích thước */
+/* Bắt buộc: box-sizing */
 * {
     box-sizing: border-box;
 }
 
 
-body {
-
-    background-color: #eef7ff;
-
-    font-family: Arial, sans-serif;
-
-    color: #333;
-
-    margin: 0;
-
-}
-
-
-
 /* Header */
 .site-header {
-
     background-color: #0077b6;
-
     color: white;
-
     text-align: center;
-
     padding: 30px;
-
 }
 
 
-
-/* ID tiêu đề chính */
+/* Tiêu đề chính */
 #main-title {
-
+    color: yellow;
     font-size: 40px;
-
-    color: yellow;
-
 }
 
 
-
-/* Menu */
-.main-nav {
-
-    background-color: #023e8a;
-
-    padding: 15px;
-
-    text-align: center;
-
-}
-
-
-
-/* Selector kết hợp */
+/* Link trong menu */
 .main-nav a {
-
     color: white;
-
     text-decoration: none;
-
     margin: 15px;
-
     font-weight: bold;
-
-}
-
-
-
-.main-nav a:hover {
-
-    color: yellow;
-
-}
-
-
-
-/* Ảnh đại diện */
-.hero {
-
-    width: 80%;
-
-    max-width: 900px;
-
-    border-radius: 10px;
-
-}
-
-
-
-/* Danh sách chủ đề */
-.topic-list {
-
-    background-color: white;
-
-    padding: 20px;
-
-    border-radius: 10px;
-
-}
-
-
-
-/* Selector kết hợp */
-.topic-list li {
-
-    margin: 10px;
-
-}
-
-
-
-/* About */
-#about {
-
-    padding: 20px;
-
 }
