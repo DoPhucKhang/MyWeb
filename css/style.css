@@ -375,5 +375,125 @@ footer {
     padding: 15px;
 
     margin-top: 30px;
+    
+
+}
+/* Thư viện ảnh */
+
+.gallery {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+figure {
+
+    width: 300px;
+
+    margin: 0;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+}
+
+
+
+
+/* Ảnh responsive */
+
+figure img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+
+
+
+
+
+figcaption {
+
+    padding: 15px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    color: #333;
+
+}
+
+
+
+
+
+/* Hover link */
+
+.main-nav a:hover {
+
+    color: #FFD60A;
+
+    text-decoration: underline;
+
+}
+
+
+
+
+
+/* Hover nút */
+
+.cta:hover {
+
+    background-color: #c1121f;
+
+    transform: scale(1.05);
+
+    transition: 0.3s;
+
+}
+
+
+
+
+
+/* Responsive điện thoại */
+
+@media(max-width:600px){
+
+
+    .gallery {
+
+        flex-direction: column;
+
+        align-items: center;
+
+    }
+
+
+    figure {
+
+        width: 90%;
+
+    }
+
 
 }
