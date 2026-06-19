@@ -57,7 +57,7 @@ body {
 
 
 
-/* Menu */
+/* Navigation */
 
 .main-nav {
 
@@ -72,8 +72,6 @@ body {
 
 
 
-
-/* Link menu */
 
 .main-nav a {
 
@@ -90,8 +88,6 @@ body {
 
 
 
-
-/* Hover link */
 
 .main-nav a:hover {
 
@@ -141,8 +137,6 @@ main {
 
 
 
-/* Mô tả */
-
 .description {
 
     text-align: center;
@@ -155,7 +149,7 @@ main {
 
 
 
-/* About */
+/* Giới thiệu */
 
 #about {
 
@@ -172,8 +166,6 @@ main {
 
 
 
-
-/* Danh sách */
 
 .topic-list {
 
@@ -199,7 +191,7 @@ main {
 
 
 
-/* Style guide */
+/* Bảng phong cách */
 
 #style-guide {
 
@@ -226,88 +218,6 @@ main {
 
 
 
-
-/* Bảng màu */
-
-.colors {
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 15px;
-
-    flex-wrap: wrap;
-
-}
-
-
-
-
-
-.color {
-
-    width: 150px;
-
-    padding: 20px;
-
-    border-radius: 10px;
-
-    font-weight: bold;
-
-    color: white;
-
-}
-
-
-
-
-
-.primary {
-
-    background-color: #8B0000;
-
-}
-
-
-
-
-
-.accent {
-
-    background-color: #FFD166;
-
-    color: black;
-
-}
-
-
-
-
-
-.background {
-
-    background-color: #FFF8E7;
-
-    color: black;
-
-}
-
-
-
-
-
-.button {
-
-    background-color: #E63946;
-
-}
-
-
-
-
-
-/* Ảnh cảm hứng */
 
 .style-image {
 
@@ -432,7 +342,7 @@ figcaption {
 
 
 
-/* Nút CTA */
+/* Nút */
 
 .cta {
 
@@ -455,8 +365,6 @@ figcaption {
 
 
 
-
-/* Hover nút */
 
 .cta:hover {
 
@@ -504,6 +412,7 @@ footer {
     }
 
 
+
     .style-image {
 
         width: 70%;
@@ -512,6 +421,8 @@ footer {
 
 
 }
+
+
 
 
 
@@ -548,7 +459,6 @@ footer {
 
 
 
-
     main {
 
         width: 95%;
@@ -575,13 +485,11 @@ footer {
 
 
 
-
     .gallery figure {
 
         width: 100%;
 
     }
-
 
 
 
