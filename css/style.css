@@ -4,115 +4,376 @@
 }
 
 
-/* Toàn bộ trang */
+/* Toàn trang */
 body {
-    background-color: #eef7ff;
+
+    background-color: #EEF7FF;
+
     color: #333333;
+
     font-family: Arial, sans-serif;
+
     margin: 0;
+
     line-height: 1.6;
+
 }
+
 
 
 /* Header */
+
 .site-header {
-    background-color: #0077b6;
+
+    background-color: #0077B6;
+
     color: white;
+
     text-align: center;
+
     padding: 30px;
+
 }
+
 
 
 /* Tiêu đề chính */
+
 #main-title {
+
     color: yellow;
+
     font-size: 40px;
+
     margin: 0;
+
 }
+
+
 
 
 /* Menu */
+
 .main-nav {
-    background-color: #023e8a;
+
+    background-color: #023E8A;
+
     padding: 15px;
+
     text-align: center;
+
 }
+
 
 
 /* Selector kết hợp */
+
 .main-nav a {
+
     color: white;
+
     text-decoration: none;
+
     margin: 15px;
+
     font-weight: bold;
+
 }
 
 
-/* Hiệu ứng link */
+
 .main-nav a:hover {
+
     color: yellow;
+
 }
 
 
-/* Khu vực nội dung */
+
+
+/* Nội dung */
+
 main {
+
     width: 90%;
+
     max-width: 1000px;
+
     margin: auto;
+
 }
 
 
-/* Ảnh đại diện */
+
+
+/* Ảnh bìa */
+
 .hero {
+
     width: 100%;
+
     max-width: 900px;
+
     display: block;
+
     margin: 20px auto;
+
     border-radius: 10px;
+
 }
 
 
-/* Đoạn mô tả */
+
+
+
+/* Mô tả */
+
 .description {
-    font-size: 18px;
+
     text-align: center;
+
+    font-size: 18px;
+
 }
+
+
+
 
 
 /* Phần giới thiệu */
+
 #about {
+
     background-color: white;
+
     padding: 20px;
+
     margin-top: 20px;
+
     border-radius: 10px;
+
 }
+
+
 
 
 /* Danh sách chủ đề */
+
 .topic-list {
-    border: 2px solid #0077b6;
+
+    border: 2px solid #0077B6;
+
     padding: 20px;
+
     border-radius: 10px;
+
 }
+
+
 
 
 /* Selector kết hợp */
+
 .topic-list li {
+
     margin: 10px;
+
 }
 
 
-/* Tiêu đề các phần */
-h2 {
-    color: #0066cc;
+
+
+
+/* Style Guide */
+
+#style-guide {
+
+    background-color: white;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+
 }
+
+
+
+
+.style-box {
+
+    text-align: center;
+
+}
+
+
+
+
+/* Bảng màu */
+
+.colors {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
+.color {
+
+    width: 150px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-weight: bold;
+
+}
+
+
+
+
+/* Màu chính */
+
+.primary {
+
+    background-color: #0077B6;
+
+}
+
+
+
+
+/* Màu nhấn */
+
+.accent {
+
+    background-color: #FFD60A;
+
+    color: black;
+
+}
+
+
+
+
+/* Màu nền */
+
+.background {
+
+    background-color: #EEF7FF;
+
+    color: black;
+
+}
+
+
+
+
+
+/* Màu nút CTA */
+
+.button {
+
+    background-color: #E63946;
+
+}
+
+
+
+
+
+/* Ảnh cảm hứng */
+
+.style-image {
+
+    width: 45%;
+
+    margin: 10px;
+
+    border-radius: 10px;
+
+}
+
+
+
+
+
+/* Nút kêu gọi hành động */
+
+.cta {
+
+    background-color: #E63946;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+}
+
+
+
+
+.cta:hover {
+
+    background-color: #C1121F;
+
+}
+
+
+
+
+
+
+/* Contact */
+
+#contact {
+
+    background-color: white;
+
+    padding: 20px;
+
+    margin-top: 20px;
+
+    border-radius: 10px;
+
+}
+
+
 
 
 /* Footer */
+
 footer {
-    background-color: #023e8a;
+
+    background-color: #023E8A;
+
     color: white;
+
     text-align: center;
+
     padding: 15px;
+
     margin-top: 30px;
+
 }
