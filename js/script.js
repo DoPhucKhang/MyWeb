@@ -16,3 +16,12 @@ if (mainTitle && welcomeText) {
     mainTitle.textContent = "Ẩm thực Việt Nam đã có JavaScript!";
     welcomeText.textContent = "Chào mừng bạn đến với hành trình khám phá các món ăn Việt Nam.";
 }
+const helloBtn = document.getElementById("helloBtn");
+const helloResult = document.getElementById("helloResult");
+
+if (helloBtn && helloResult) {
+    helloBtn.addEventListener("click", function () {
+        helloResult.textContent =
+            "Cảm ơn bạn đã ghé thăm website Ẩm thực Việt Nam!";
+    });
+}
