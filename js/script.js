@@ -1,6 +1,7 @@
-// ======================
+// =======================
 // Console
-// ======================
+// =======================
+
 
 const siteName = "Ẩm thực Việt Nam";
 
@@ -11,24 +12,22 @@ let imageCount = 5;
 let isReady = true;
 
 
-console.log("Website:", siteName);
+console.log("Website:",siteName);
 
-console.log("Chủ đề:", topic);
+console.log("Chủ đề:",topic);
 
-console.log("Số ảnh:", imageCount);
+console.log("Số ảnh:",imageCount);
 
-console.log("Đã sẵn sàng dùng JS?", isReady);
-
-console.log("Kiểu dữ liệu:", typeof topic);
+console.log("Sẵn sàng:",isReady);
 
 
 
 
 
 
-// ======================
+// =======================
 // Đổi nội dung
-// ======================
+// =======================
 
 
 const mainTitle =
@@ -42,14 +41,11 @@ document.getElementById("welcomeText");
 
 if(mainTitle && welcomeText){
 
-
     mainTitle.textContent =
     "Ẩm thực Việt Nam";
 
-
     welcomeText.textContent =
     "Chào mừng bạn khám phá món ngon Việt Nam";
-
 
 }
 
@@ -57,12 +53,9 @@ if(mainTitle && welcomeText){
 
 
 
-
-
-
-// ======================
+// =======================
 // Nút lời chào
-// ======================
+// =======================
 
 
 const helloBtn =
@@ -73,18 +66,17 @@ const helloResult =
 document.getElementById("helloResult");
 
 
-
 if(helloBtn && helloResult){
 
 
-    helloBtn.addEventListener("click",function(){
+helloBtn.addEventListener("click",function(){
 
 
-        helloResult.textContent =
-        "Cảm ơn bạn đã ghé thăm website Ẩm thực Việt Nam!";
+helloResult.textContent =
+"Cảm ơn bạn đã ghé thăm website Ẩm thực Việt Nam!";
 
 
-    });
+});
 
 
 }
@@ -95,10 +87,9 @@ if(helloBtn && helloResult){
 
 
 
-
-// ======================
+// =======================
 // Ẩn hiện giới thiệu
-// ======================
+// =======================
 
 
 const toggleAboutBtn =
@@ -113,31 +104,13 @@ document.getElementById("aboutContent");
 if(toggleAboutBtn && aboutContent){
 
 
-    toggleAboutBtn.addEventListener("click",function(){
+toggleAboutBtn.addEventListener("click",function(){
 
 
-        aboutContent.classList.toggle("hidden");
+aboutContent.classList.toggle("hidden");
 
 
-
-        if(aboutContent.classList.contains("hidden")){
-
-
-            toggleAboutBtn.textContent =
-            "Xem giới thiệu";
-
-
-        }else{
-
-
-            toggleAboutBtn.textContent =
-            "Ẩn giới thiệu";
-
-
-        }
-
-
-    });
+});
 
 
 }
@@ -148,10 +121,9 @@ if(toggleAboutBtn && aboutContent){
 
 
 
-
-// ======================
-// MENU MOBILE
-// ======================
+// =======================
+// MENU
+// =======================
 
 
 const menuToggle =
@@ -166,64 +138,50 @@ document.getElementById("mainMenu");
 if(menuToggle && mainMenu){
 
 
-    menuToggle.addEventListener("click",function(){
+menuToggle.addEventListener("click",function(){
 
 
-        mainMenu.classList.toggle("active");
+mainMenu.classList.toggle("active");
 
 
+if(mainMenu.classList.contains("active")){
 
-        if(mainMenu.classList.contains("active")){
+    menuToggle.textContent =
+    "Đóng menu";
 
+}else{
 
-            menuToggle.textContent =
-            "Đóng menu";
+    menuToggle.textContent =
+    "☰ Menu";
 
-
-        }else{
-
-
-            menuToggle.textContent =
-            "☰ Menu";
+}
 
 
-        }
-
-
-    });
+});
 
 
 
+const links =
+mainMenu.querySelectorAll("a");
 
 
-    // Chọn link tự đóng menu
+links.forEach(function(link){
 
 
-    const links =
-    mainMenu.querySelectorAll("a");
+link.addEventListener("click",function(){
 
 
-
-    links.forEach(function(link){
-
+mainMenu.classList.remove("active");
 
 
-        link.addEventListener("click",function(){
+menuToggle.textContent =
+"☰ Menu";
 
 
-            mainMenu.classList.remove("active");
+});
 
 
-            menuToggle.textContent =
-            "☰ Menu";
-
-
-        });
-
-
-
-    });
-
+});
 
 
 }
@@ -235,10 +193,9 @@ if(menuToggle && mainMenu){
 
 
 
-
-// ======================
-// ĐỔI CHỦ ĐỀ
-// ======================
+// =======================
+// Đổi giao diện
+// =======================
 
 
 const themeSelect =
@@ -249,37 +206,29 @@ document.getElementById("themeSelect");
 if(themeSelect){
 
 
-    themeSelect.addEventListener("change",function(){
+themeSelect.addEventListener("change",function(){
+
+
+document.body.classList.remove(
+"dark-mode",
+"warm-mode"
+);
 
 
 
-        document.body.classList.remove(
-
-            "dark-mode",
-
-            "warm-mode"
-
-        );
+if(themeSelect.value !== ""){
 
 
+document.body.classList.add(
+themeSelect.value
+);
 
 
-
-        if(themeSelect.value !== ""){
-
-
-            document.body.classList.add(
-
-                themeSelect.value
-
-            );
-
-
-        }
+}
 
 
 
-    });
+});
 
 
 }
@@ -290,11 +239,9 @@ if(themeSelect){
 
 
 
-
-
-// ======================
-// TÌM KIẾM NỘI DUNG
-// ======================
+// =======================
+// TÌM KIẾM ẢNH
+// =======================
 
 
 const searchInput =
@@ -306,66 +253,45 @@ document.querySelectorAll(".search-item");
 
 
 
-if(searchInput && searchItems.length > 0){
+if(searchInput){
+
+
+searchInput.addEventListener("keyup",function(){
+
+
+const keyword =
+searchInput.value.toLowerCase().trim();
 
 
 
-    searchInput.addEventListener("keyup",function(){
+searchItems.forEach(function(item){
+
+
+const text =
+item.textContent.toLowerCase();
 
 
 
-        const keyword =
-
-        searchInput.value
-
-        .toLowerCase()
-
-        .trim();
+if(text.includes(keyword)){
 
 
+item.style.display="";
 
 
-
-        searchItems.forEach(function(item){
-
+}else{
 
 
-            const text =
+item.style.display="none";
 
-            item.textContent
 
-            .toLowerCase();
+}
 
 
 
+});
 
 
-            if(text.includes(keyword)){
-
-
-
-                item.style.display = "";
-
-
-
-            }else{
-
-
-
-                item.style.display = "none";
-
-
-
-            }
-
-
-
-        });
-
-
-
-    });
-
+});
 
 
 }
@@ -376,40 +302,10 @@ if(searchInput && searchItems.length > 0){
 
 
 
+// =======================
+// LỌC ẢNH
+// =======================
 
-
-// ======================
-// Xử lý form
-// ======================
-
-
-const contactForm =
-document.querySelector(".contact-form");
-
-
-
-if(contactForm){
-
-
-    contactForm.addEventListener("submit",function(e){
-
-
-        e.preventDefault();
-
-
-
-        alert(
-        "Cảm ơn bạn đã gửi thông tin!"
-        );
-
-
-    });
-
-
-}
-// ======================
-// LỌC THƯ VIỆN ẢNH
-// ======================
 
 const filterButtons =
 document.querySelectorAll(".filter-btn");
@@ -419,109 +315,151 @@ const galleryItems =
 document.querySelectorAll(".gallery-item");
 
 
+
 filterButtons.forEach(function(button){
 
-    button.addEventListener("click",function(){
 
-        const filter =
-        button.dataset.filter;
+button.addEventListener("click",function(){
 
 
-        galleryItems.forEach(function(item){
-
-            const category =
-            item.dataset.category;
+const filter =
+button.dataset.filter;
 
 
-            if(
-                filter === "all" ||
-                category === filter
-            ){
 
-                item.style.display = "";
+galleryItems.forEach(function(item){
 
-            }else{
 
-                item.style.display = "none";
+const category =
+item.dataset.category;
 
-            }
 
-        });
 
-    });
+if(
+filter==="all" ||
+category===filter
+){
+
+
+item.style.display="";
+
+
+}else{
+
+
+item.style.display="none";
+
+
+}
+
 
 });
-// ======================
-// KIỂM TRA FORM LIÊN HỆ
-// ======================
+
+
+});
+
+
+});
+
+
+
+
+
+
+
+// =======================
+// FORM
+// =======================
+
 
 const contactForm =
 document.getElementById("contactForm");
 
+
 const fullName =
 document.getElementById("fullName");
 
+
 const email =
 document.getElementById("email");
+
 
 const formMessage =
 document.getElementById("formMessage");
 
 
-if (
-    contactForm &&
-    fullName &&
-    email &&
-    formMessage
-) {
 
-    contactForm.addEventListener(
-        "submit",
-        function (event) {
-
-            event.preventDefault();
-
-            const nameValue =
-            fullName.value.trim();
-
-            const emailValue =
-            email.value.trim();
+if(contactForm){
 
 
-            if (nameValue === "") {
-
-                formMessage.textContent =
-                "Vui lòng nhập họ tên.";
-
-                formMessage.style.color =
-                "red";
-
-                return;
-            }
+contactForm.addEventListener("submit",function(event){
 
 
-            if (
-                emailValue === "" ||
-                !emailValue.includes("@")
-            ) {
-
-                formMessage.textContent =
-                "Vui lòng nhập email hợp lệ.";
-
-                formMessage.style.color =
-                "red";
-
-                return;
-            }
+event.preventDefault();
 
 
-            formMessage.textContent =
-            "Thông tin đã hợp lệ. Cảm ơn bạn!";
 
-            formMessage.style.color =
-            "green";
+const nameValue =
+fullName.value.trim();
 
-        }
-    );
+
+
+const emailValue =
+email.value.trim();
+
+
+
+
+if(nameValue===""){
+
+
+formMessage.textContent =
+"Vui lòng nhập họ tên.";
+
+
+formMessage.style.color="red";
+
+
+return;
+
+
+}
+
+
+
+
+
+if(
+emailValue==="" ||
+!emailValue.includes("@")
+){
+
+
+formMessage.textContent =
+"Vui lòng nhập email hợp lệ.";
+
+
+formMessage.style.color="red";
+
+
+return;
+
+
+}
+
+
+
+
+
+formMessage.textContent =
+"Thông tin đã hợp lệ. Cảm ơn bạn!";
+
+
+formMessage.style.color="green";
+
+
+
+});
+
 
 }
