@@ -1,33 +1,28 @@
-// =======================
 // Console
-// =======================
+
+const siteName="Ẩm thực Việt Nam";
+
+let topic="Món ăn truyền thống";
+
+let imageCount=5;
+
+let isReady=true;
 
 
-const siteName = "Ẩm thực Việt Nam";
+console.log(siteName);
 
-let topic = "Khám phá món ăn truyền thống";
+console.log(topic);
 
-let imageCount = 5;
+console.log(imageCount);
 
-let isReady = true;
-
-
-console.log("Website:",siteName);
-
-console.log("Chủ đề:",topic);
-
-console.log("Số ảnh:",imageCount);
-
-console.log("Sẵn sàng:",isReady);
+console.log(isReady);
 
 
 
 
 
 
-// =======================
-// Đổi nội dung
-// =======================
+// đổi tiêu đề
 
 
 const mainTitle =
@@ -39,13 +34,19 @@ document.getElementById("welcomeText");
 
 
 
-if(mainTitle && welcomeText){
+if(mainTitle){
 
-    mainTitle.textContent =
-    "Ẩm thực Việt Nam";
+mainTitle.textContent=
+"Ẩm thực Việt Nam";
 
-    welcomeText.textContent =
-    "Chào mừng bạn khám phá món ngon Việt Nam";
+}
+
+
+
+if(welcomeText){
+
+welcomeText.textContent=
+"Khám phá món ngon Việt Nam";
 
 }
 
@@ -53,30 +54,15 @@ if(mainTitle && welcomeText){
 
 
 
-// =======================
-// Nút lời chào
-// =======================
+
+// nút chào
 
 
-const helloBtn =
-document.getElementById("helloBtn");
+helloBtn.onclick=function(){
 
 
-const helloResult =
-document.getElementById("helloResult");
-
-
-if(helloBtn && helloResult){
-
-
-helloBtn.addEventListener("click",function(){
-
-
-helloResult.textContent =
-"Cảm ơn bạn đã ghé thăm website Ẩm thực Việt Nam!";
-
-
-});
+helloResult.textContent=
+"Cảm ơn bạn đã ghé thăm!";
 
 
 }
@@ -87,32 +73,15 @@ helloResult.textContent =
 
 
 
-// =======================
-// Ẩn hiện giới thiệu
-// =======================
+// ẩn hiện
 
 
-const toggleAboutBtn =
-document.getElementById("toggleAboutBtn");
-
-
-const aboutContent =
-document.getElementById("aboutContent");
-
-
-
-if(toggleAboutBtn && aboutContent){
-
-
-toggleAboutBtn.addEventListener("click",function(){
+toggleAboutBtn.onclick=function(){
 
 
 aboutContent.classList.toggle("hidden");
 
 
-});
-
-
 }
 
 
@@ -121,69 +90,15 @@ aboutContent.classList.toggle("hidden");
 
 
 
-// =======================
-// MENU
-// =======================
+// menu
 
 
-const menuToggle =
-document.getElementById("menuToggle");
-
-
-const mainMenu =
-document.getElementById("mainMenu");
-
-
-
-if(menuToggle && mainMenu){
-
-
-menuToggle.addEventListener("click",function(){
+menuToggle.onclick=function(){
 
 
 mainMenu.classList.toggle("active");
 
 
-if(mainMenu.classList.contains("active")){
-
-    menuToggle.textContent =
-    "Đóng menu";
-
-}else{
-
-    menuToggle.textContent =
-    "☰ Menu";
-
-}
-
-
-});
-
-
-
-const links =
-mainMenu.querySelectorAll("a");
-
-
-links.forEach(function(link){
-
-
-link.addEventListener("click",function(){
-
-
-mainMenu.classList.remove("active");
-
-
-menuToggle.textContent =
-"☰ Menu";
-
-
-});
-
-
-});
-
-
 }
 
 
@@ -191,22 +106,10 @@ menuToggle.textContent =
 
 
 
+// đổi theme
 
 
-// =======================
-// Đổi giao diện
-// =======================
-
-
-const themeSelect =
-document.getElementById("themeSelect");
-
-
-
-if(themeSelect){
-
-
-themeSelect.addEventListener("change",function(){
+themeSelect.onchange=function(){
 
 
 document.body.classList.remove(
@@ -215,21 +118,11 @@ document.body.classList.remove(
 );
 
 
+if(this.value){
 
-if(themeSelect.value !== ""){
-
-
-document.body.classList.add(
-themeSelect.value
-);
-
+document.body.classList.add(this.value);
 
 }
-
-
-
-});
-
 
 }
 
@@ -239,36 +132,20 @@ themeSelect.value
 
 
 
-// =======================
-// TÌM KIẾM ẢNH
-// =======================
+// tìm kiếm
 
 
-const searchInput =
-document.getElementById("searchInput");
+searchInput.onkeyup=function(){
 
 
-const searchItems =
-document.querySelectorAll(".search-item");
+let keyword=this.value.toLowerCase();
 
 
-
-if(searchInput){
-
-
-searchInput.addEventListener("keyup",function(){
+document.querySelectorAll(".search-item")
+.forEach(function(item){
 
 
-const keyword =
-searchInput.value.toLowerCase().trim();
-
-
-
-searchItems.forEach(function(item){
-
-
-const text =
-item.textContent.toLowerCase();
+let text=item.textContent.toLowerCase();
 
 
 
@@ -287,10 +164,6 @@ item.style.display="none";
 }
 
 
-
-});
-
-
 });
 
 
@@ -302,42 +175,28 @@ item.style.display="none";
 
 
 
-// =======================
-// LỌC ẢNH
-// =======================
+
+// lọc ảnh
 
 
-const filterButtons =
-document.querySelectorAll(".filter-btn");
+document.querySelectorAll(".filter-btn")
+.forEach(function(btn){
 
 
-const galleryItems =
-document.querySelectorAll(".gallery-item");
+btn.onclick=function(){
 
 
-
-filterButtons.forEach(function(button){
-
-
-button.addEventListener("click",function(){
-
-
-const filter =
-button.dataset.filter;
+let filter=this.dataset.filter;
 
 
 
-galleryItems.forEach(function(item){
-
-
-const category =
-item.dataset.category;
-
+document.querySelectorAll(".gallery-item")
+.forEach(function(item){
 
 
 if(
-filter==="all" ||
-category===filter
+filter=="all" ||
+item.dataset.category==filter
 ){
 
 
@@ -356,10 +215,13 @@ item.style.display="none";
 });
 
 
+}
+
+
+
 });
 
 
-});
 
 
 
@@ -367,54 +229,47 @@ item.style.display="none";
 
 
 
-// =======================
-// FORM
-// =======================
+// form
 
 
-const contactForm =
-document.getElementById("contactForm");
+contactForm.onsubmit=function(e){
 
 
-const fullName =
-document.getElementById("fullName");
-
-
-const email =
-document.getElementById("email");
-
-
-const formMessage =
-document.getElementById("formMessage");
+e.preventDefault();
 
 
 
-if(contactForm){
-
-
-contactForm.addEventListener("submit",function(event){
-
-
-event.preventDefault();
-
-
-
-const nameValue =
+let name=
 fullName.value.trim();
 
 
 
-const emailValue =
+let mail=
 email.value.trim();
 
 
 
+if(name==""){
 
-if(nameValue===""){
+
+formMessage.textContent=
+"Vui lòng nhập họ tên";
 
 
-formMessage.textContent =
-"Vui lòng nhập họ tên.";
+formMessage.style.color="red";
+
+return;
+
+}
+
+
+
+
+if(!mail.includes("@")){
+
+
+formMessage.textContent=
+"Email không hợp lệ";
 
 
 formMessage.style.color="red";
@@ -427,39 +282,11 @@ return;
 
 
 
-
-
-if(
-emailValue==="" ||
-!emailValue.includes("@")
-){
-
-
-formMessage.textContent =
-"Vui lòng nhập email hợp lệ.";
-
-
-formMessage.style.color="red";
-
-
-return;
-
-
-}
-
-
-
-
-
-formMessage.textContent =
-"Thông tin đã hợp lệ. Cảm ơn bạn!";
+formMessage.textContent=
+"Gửi thành công";
 
 
 formMessage.style.color="green";
-
-
-
-});
 
 
 }
