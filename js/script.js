@@ -1,5 +1,5 @@
 // =======================
-// 1. Khai báo thông tin website
+// 1. Thông tin website cá nhân
 // =======================
 
 const siteName = "Ẩm thực Việt Nam";
@@ -11,7 +11,7 @@ let imageCount = 5;
 let isReady = true;
 
 
-// In thông tin ra Console
+// Hiển thị Console
 
 console.log("Website:", siteName);
 
@@ -26,8 +26,9 @@ console.log("Kiểu dữ liệu topic:", typeof topic);
 
 
 
+
 // =======================
-// 2. Thay đổi nội dung tiêu đề
+// 2. Đổi tiêu đề bằng JavaScript
 // =======================
 
 const mainTitle = document.getElementById("mainTitle");
@@ -38,15 +39,17 @@ const welcomeText = document.getElementById("welcomeText");
 if (mainTitle && welcomeText) {
 
 
-    mainTitle.textContent = 
+    mainTitle.textContent =
     "Ẩm thực Việt Nam đã có JavaScript!";
 
 
-    welcomeText.textContent = 
+    welcomeText.textContent =
     "Chào mừng bạn đến với hành trình khám phá món ngon Việt Nam.";
 
 
 }
+
+
 
 
 
@@ -80,13 +83,19 @@ if (helloBtn && helloResult) {
 
 
 
+
+
 // =======================
-// 4. Ẩn / hiện phần giới thiệu
+// 4. Nút Ẩn / Hiện giới thiệu
 // =======================
 
-const toggleAboutBtn = document.getElementById("toggleAboutBtn");
+const toggleAboutBtn =
+document.getElementById("toggleAboutBtn");
 
-const aboutContent = document.getElementById("aboutContent");
+
+const aboutContent =
+document.getElementById("aboutContent");
+
 
 
 if (toggleAboutBtn && aboutContent) {
