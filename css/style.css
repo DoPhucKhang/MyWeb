@@ -68,7 +68,7 @@ body {
 
 
 
-/* Nút menu mới */
+/* Nút menu thêm */
 
 .menu-toggle {
 
@@ -89,7 +89,6 @@ body {
     font-size: 16px;
 
 }
-
 
 
 
@@ -252,15 +251,13 @@ main {
 
 
 
-
-/* Ẩn hiện nội dung bằng JS */
+/* Ẩn hiện bằng JS */
 
 .hidden {
 
     display: none;
 
 }
-
 
 
 
@@ -379,7 +376,6 @@ figcaption {
     padding: 10px;
 
 }
-
 
 
 
@@ -508,7 +504,7 @@ footer {
 
 
 
-/* Menu mở bằng JavaScript */
+/* Menu active */
 
 .main-menu.active {
 
@@ -552,10 +548,10 @@ footer {
 
 
 
-
 /* Điện thoại */
 
 @media (max-width: 600px) {
+
 
 
     #mainTitle {
@@ -563,6 +559,7 @@ footer {
         font-size: 28px;
 
     }
+
 
 
 
@@ -576,6 +573,7 @@ footer {
         margin-top: 15px;
 
     }
+
 
 
 
@@ -595,13 +593,15 @@ footer {
 
 
 
-    /* menu mở */
+
+    /* menu mở bằng JS */
 
     .main-menu.active {
 
         display: flex;
 
     }
+
 
 
 
@@ -670,7 +670,6 @@ footer {
         width: 100%;
 
     }
-
 
 
 }
