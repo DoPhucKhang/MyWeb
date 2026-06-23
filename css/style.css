@@ -760,3 +760,36 @@ footer {
 
 
 }
+.filter-buttons{
+
+    text-align:center;
+
+    margin:20px 0;
+
+}
+
+
+.filter-btn{
+
+    padding:10px 15px;
+
+    margin:5px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#E63946;
+
+    color:white;
+
+    cursor:pointer;
+
+}
+
+
+.filter-btn:hover{
+
+    background:#C1121F;
+
+}
