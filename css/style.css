@@ -1,94 +1,104 @@
-/* Reset */
+<!DOCTYPE html>
+<html lang="vi">
 
-* {
+<head>
 
-    box-sizing: border-box;
+<meta charset="UTF-8">
 
-}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Ẩm thực Việt Nam</title>
 
+<link rel="stylesheet" href="../css/style.css">
 
-/* Toàn trang */
+</head>
 
-body {
 
-    background-color: #FFF8E7;
+<body>
 
-    color: #333;
 
-    font-family: Arial, sans-serif;
+<header class="site-header">
 
-    margin: 0;
 
-    line-height: 1.6;
+<h1 id="mainTitle">
+Ẩm thực Việt Nam
+</h1>
 
-}
 
+<p id="welcomeText">
+Chào mừng bạn đến với Ẩm thực Việt Nam
+</p>
 
 
+<p>
+Khám phá hương vị truyền thống và văn hóa món ăn Việt
+</p>
 
 
 
+<button id="helloBtn">
 
-/* Header */
+Nhấn để xem lời chào
 
-.site-header {
+</button>
 
-    background-color: #8B0000;
 
-    color: white;
+<p id="helloResult"></p>
 
-    text-align: center;
 
-    padding: 30px;
 
-}
 
 
+<!-- Nút menu -->
 
+<button id="menuToggle" class="menu-toggle">
 
+☰ Menu
 
+</button>
 
 
-/* Tiêu đề */
 
-#mainTitle {
+</header>
 
-    color: #FFD166;
 
-    font-size: 40px;
 
-    margin: 0;
 
-}
 
 
 
 
+<!-- Menu -->
 
+<nav id="mainMenu" class="main-menu">
 
 
-/* Nút menu thêm */
+<a href="#home">
+Trang chủ
+</a>
 
-.menu-toggle {
 
-    display: none;
+<a href="#about">
+Giới thiệu
+</a>
 
-    background-color: #E63946;
 
-    color: white;
+<a href="#gallery">
+Hình ảnh
+</a>
 
-    border: none;
 
-    padding: 12px 25px;
+<a href="#style-guide">
+Phong cách
+</a>
 
-    border-radius: 8px;
 
-    cursor: pointer;
+<a href="#contact">
+Liên hệ
+</a>
 
-    font-size: 16px;
 
-}
+</nav>
 
 
 
@@ -96,52 +106,45 @@ body {
 
 
 
-/* Navigation */
 
-.main-nav,
-.main-menu {
 
-    background-color: #5A0000;
+<main>
 
-    padding: 15px;
 
-    text-align: center;
 
-}
 
 
+<section id="home">
 
 
+<img
 
+class="hero"
 
+src="../img/hero.jpg"
 
-.main-nav a,
-.main-menu a {
+alt="Ẩm thực Việt Nam"
 
-    color: white;
 
-    text-decoration: none;
+>
 
-    margin: 15px;
 
-    font-weight: bold;
 
-}
+<p class="description">
 
 
+Ẩm thực Việt Nam nổi tiếng với sự đa dạng,
+hương vị đặc trưng và nét văn hóa riêng.
 
 
+</p>
 
 
 
-.main-nav a:hover,
-.main-menu a:hover {
+</section>
 
-    color: #FFD166;
 
-    text-decoration: underline;
 
-}
 
 
 
@@ -149,527 +152,272 @@ body {
 
 
 
-/* Nội dung */
+<section id="about">
 
-main {
 
-    width: 90%;
+<h2>
+Giới thiệu
+</h2>
 
-    max-width: 1000px;
 
-    margin: auto;
 
-}
+<div id="aboutContent" class="topic-list">
 
 
+<p>
 
+Website Ẩm thực Việt Nam giúp khám phá
+những món ăn truyền thống Việt Nam.
 
+</p>
 
 
+<ul>
 
-/* Ảnh bìa */
+<li>Phở truyền thống</li>
 
-.hero {
+<li>Bánh mì Việt Nam</li>
 
-    width: 100%;
+<li>Món ăn vùng miền</li>
 
-    max-width: 900px;
+</ul>
 
-    display: block;
 
-    margin: 20px auto;
+</div>
 
-    border-radius: 12px;
 
-}
 
+<button id="toggleAboutBtn">
 
+Ẩn/Hiện giới thiệu
 
+</button>
 
 
+</section>
 
 
-.description {
 
-    text-align: center;
 
-    font-size: 18px;
 
-}
 
 
 
 
+<section id="style-guide">
 
 
+<h2>
+Bảng phong cách thiết kế
+</h2>
 
-/* Giới thiệu */
 
-#about {
 
-    background-color: white;
+<div class="style-box">
 
-    padding: 20px;
 
-    margin-top: 20px;
+<h3>
+Chủ đề: Ẩm thực Việt Nam
+</h3>
 
-    border-radius: 10px;
 
-}
+<p>
 
+Thiết kế lấy cảm hứng từ món ăn,
+văn hóa và màu sắc Việt Nam.
 
+</p>
 
 
 
 
+<img
 
-.topic-list {
+class="style-image"
 
-    border: 2px solid #8B0000;
+src="../img/detail-1.jpg"
 
-    padding: 20px;
+alt="Món ăn"
 
-    border-radius: 10px;
+>
 
-}
 
 
 
+<img
 
+class="style-image"
 
+src="../img/detail-2.jpg"
 
+alt="Ẩm thực"
 
-.topic-list li {
+>
 
-    margin: 10px;
 
-}
 
+</div>
 
 
+</section>
 
 
 
 
-/* Ẩn hiện bằng JS */
 
-.hidden {
 
-    display: none;
 
-}
 
 
+<section id="gallery">
 
 
+<h2>
+Thư viện ảnh
+</h2>
 
 
 
-/* Bảng phong cách */
+<div class="gallery">
 
-#style-guide {
 
-    background-color: white;
+<figure>
 
-    padding: 20px;
+<img src="../img/hero.jpg">
 
-    margin-top: 20px;
+<figcaption>
+Hương vị Việt Nam
+</figcaption>
 
-    border-radius: 10px;
+</figure>
 
-}
 
 
 
+<figure>
 
+<img src="../img/detail-1.jpg">
 
+<figcaption>
+Món ăn truyền thống
+</figcaption>
 
+</figure>
 
-.style-box {
 
-    text-align: center;
 
-}
 
 
+<figure>
 
+<img src="../img/detail-2.jpg">
 
+<figcaption>
+Đặc sản Việt Nam
+</figcaption>
 
+</figure>
 
 
-.style-image {
 
-    width: 45%;
 
-    margin: 10px;
 
-    border-radius: 10px;
+<figure>
 
-}
+<img src="../img/detail-3.jpg">
 
+<figcaption>
+Văn hóa ẩm thực
+</figcaption>
 
+</figure>
 
 
 
 
+</div>
 
-/* Gallery */
 
-.gallery {
+</section>
 
-    display: flex;
 
-    justify-content: center;
 
-    gap: 20px;
 
-    flex-wrap: wrap;
 
-}
 
 
 
 
+<section id="contact">
 
 
+<h2>
+Liên hệ
+</h2>
 
-.gallery figure {
 
-    width: 300px;
 
-    margin: 0;
+<form class="contact-form">
 
-    background-color: white;
 
-    border-radius: 10px;
+<input type="text" placeholder="Họ tên">
 
-    overflow: hidden;
 
-}
+<input type="email" placeholder="Email">
 
 
+<textarea placeholder="Nội dung"></textarea>
 
 
+<button class="cta">
 
+Gửi thông tin
 
+</button>
 
-.gallery img {
 
-    width: 100%;
+</form>
 
-    height: auto;
 
-    display: block;
+</section>
 
-}
 
 
 
 
 
+</main>
 
 
-figcaption {
 
-    text-align: center;
 
-    padding: 10px;
 
-}
 
 
 
+<footer>
 
 
+<p>
 
+© 2026 MyWeb - Ẩm thực Việt Nam
 
-/* Form */
+</p>
 
-.contact-form {
 
-    max-width: 500px;
+</footer>
 
-    margin: auto;
 
-    display: flex;
 
-    flex-direction: column;
 
-    gap: 12px;
 
-}
 
 
 
+<script src="../js/script.js"></script>
 
 
+</body>
 
 
-.contact-form input,
-.contact-form textarea {
-
-    padding: 12px;
-
-    border: 1px solid #ccc;
-
-    border-radius: 8px;
-
-    font-size: 16px;
-
-}
-
-
-
-
-
-
-
-.contact-form textarea {
-
-    height: 120px;
-
-}
-
-
-
-
-
-
-
-/* Nút */
-
-.cta,
-#helloBtn,
-#toggleAboutBtn {
-
-    background-color: #E63946;
-
-    color: white;
-
-    border: none;
-
-    padding: 12px 25px;
-
-    border-radius: 8px;
-
-    cursor: pointer;
-
-    font-size: 16px;
-
-}
-
-
-
-
-
-
-
-.cta:hover,
-#helloBtn:hover,
-#toggleAboutBtn:hover {
-
-    background-color: #C1121F;
-
-    transform: scale(1.05);
-
-    transition: 0.3s;
-
-}
-
-
-
-
-
-
-
-/* Footer */
-
-footer {
-
-    background-color: #5A0000;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 20px;
-
-    margin-top: 30px;
-
-}
-
-
-
-
-
-
-
-/* Menu active */
-
-.main-menu.active {
-
-    display: flex;
-
-}
-
-
-
-
-
-
-
-/* Tablet */
-
-@media (max-width: 900px) {
-
-
-    .gallery figure {
-
-        width: 45%;
-
-    }
-
-
-
-    .style-image {
-
-        width: 70%;
-
-    }
-
-
-}
-
-
-
-
-
-
-
-
-
-/* Điện thoại */
-
-@media (max-width: 600px) {
-
-
-
-    #mainTitle {
-
-        font-size: 28px;
-
-    }
-
-
-
-
-
-    /* hiện nút menu */
-
-    .menu-toggle {
-
-        display: inline-block;
-
-        margin-top: 15px;
-
-    }
-
-
-
-
-
-
-    /* menu đóng */
-
-    .main-menu {
-
-        display: none;
-
-        flex-direction: column;
-
-    }
-
-
-
-
-
-
-    /* menu mở bằng JS */
-
-    .main-menu.active {
-
-        display: flex;
-
-    }
-
-
-
-
-
-
-    .main-nav a,
-    .main-menu a {
-
-        margin: 5px;
-
-        display: block;
-
-    }
-
-
-
-
-
-
-    main {
-
-        width: 95%;
-
-    }
-
-
-
-
-
-
-    .hero {
-
-        width: 100%;
-
-    }
-
-
-
-
-
-
-    .gallery {
-
-        flex-direction: column;
-
-    }
-
-
-
-
-
-
-    .gallery figure {
-
-        width: 100%;
-
-    }
-
-
-
-
-
-
-    .style-image {
-
-        width: 100%;
-
-    }
-
-
-}
+</html>
