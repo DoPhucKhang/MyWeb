@@ -1,5 +1,5 @@
 // Thông tin website cá nhân
-let tenWebsite = "Website Cá Nhân";
+let tenWebsite = "Ẩm thực Việt Nam";
 let chuDe = "Giới thiệu bản thân";
 let soLuongAnh = 15;
 let trangThaiHoanThanh = true;
