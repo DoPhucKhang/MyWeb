@@ -9,3 +9,10 @@ console.log("Tên website:", tenWebsite);
 console.log("Chủ đề:", chuDe);
 console.log("Số lượng ảnh:", soLuongAnh);
 console.log("Trạng thái hoàn thành:", trangThaiHoanThanh);
+const mainTitle = document.getElementById("mainTitle");
+const welcomeText = document.getElementById("welcomeText");
+
+if (mainTitle && welcomeText) {
+    mainTitle.textContent = "Ẩm thực Việt Nam đã có JavaScript!";
+    welcomeText.textContent = "Chào mừng bạn đến với hành trình khám phá các món ăn Việt Nam.";
+}
