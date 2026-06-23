@@ -3,474 +3,408 @@
 
 <head>
 
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ẩm thực Việt Nam</title>
+    <title>Ẩm thực Việt Nam</title>
 
-<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
-
 <body>
 
+    <header class="site-header">
 
-<header class="site-header">
+        <h1 id="mainTitle">
+            Ẩm thực Việt Nam
+        </h1>
 
+        <p id="welcomeText">
+            Chào mừng bạn đến với Ẩm thực Việt Nam
+        </p>
 
-<h1 id="mainTitle">
-Ẩm thực Việt Nam
-</h1>
+        <p>
+            Khám phá hương vị truyền thống và văn hóa món ăn Việt
+        </p>
 
+        <button id="helloBtn">
+            Nhấn để xem lời chào
+        </button>
 
-<p id="welcomeText">
-Chào mừng bạn đến với Ẩm thực Việt Nam
-</p>
+        <p id="helloResult"></p>
 
+        <!-- Chọn giao diện -->
 
-<p>
-Khám phá hương vị truyền thống và văn hóa món ăn Việt
-</p>
+        <select id="themeSelect">
 
-<!-- Ô tìm kiếm -->
+            <option value="">
+                Giao diện mặc định
+            </option>
 
-<input 
-id="searchInput"
-type="text"
-placeholder="Tìm kiếm món ăn..."
->
+            <option value="dark-mode">
+                Nền tối
+            </option>
 
-<button id="helloBtn">
+            <option value="warm-mode">
+                Nền ấm
+            </option>
 
-Nhấn để xem lời chào
+        </select>
 
-</button>
+        <!-- Menu mobile -->
 
+        <button id="menuToggle" class="menu-toggle">
 
-<p id="helloResult"></p>
+            ☰ Menu
 
+        </button>
 
+    </header>
 
 
 
-<!-- Chọn giao diện -->
 
-<select id="themeSelect">
 
-<option value="">
-Giao diện mặc định
-</option>
+    <!-- Menu -->
 
+    <nav id="mainMenu" class="main-menu">
 
-<option value="dark-mode">
-Nền tối
-</option>
+        <a href="#home">
+            Trang chủ
+        </a>
 
+        <a href="#about">
+            Giới thiệu
+        </a>
 
-<option value="warm-mode">
-Nền ấm
-</option>
+        <a href="#gallery">
+            Thư viện ảnh
+        </a>
 
+        <a href="#style-guide">
+            Phong cách
+        </a>
 
-</select>
+        <a href="#contact">
+            Liên hệ
+        </a>
 
+    </nav>
 
 
 
 
-<!-- Nút menu -->
 
-<button id="menuToggle" class="menu-toggle">
+    <main>
 
-☰ Menu
+        <!-- Trang chủ -->
 
-</button>
+        <section id="home">
 
+            <img
+                class="hero"
+                src="../img/hero.jpg"
+                alt="Ẩm thực Việt Nam"
+            >
 
+            <p class="description">
 
-</header>
+                Ẩm thực Việt Nam nổi tiếng với sự đa dạng,
+                hương vị đặc trưng và nét văn hóa riêng.
 
+            </p>
 
+        </section>
 
 
 
 
 
-<!-- Menu -->
+        <!-- Giới thiệu -->
 
-<nav id="mainMenu" class="main-menu">
+        <section id="about">
 
+            <h2>
+                Giới thiệu
+            </h2>
 
-<a href="#home">
-Trang chủ
-</a>
+            <div id="aboutContent" class="topic-list">
 
+                <p>
 
-<a href="#about">
-Giới thiệu
-</a>
+                    Website Ẩm thực Việt Nam giúp khám phá
+                    những món ăn truyền thống Việt Nam.
 
+                </p>
 
-<a href="#gallery">
-Hình ảnh
-</a>
+                <ul>
 
+                    <li>Phở truyền thống</li>
 
-<a href="#style-guide">
-Phong cách
-</a>
+                    <li>Bánh mì Việt Nam</li>
 
+                    <li>Món ăn vùng miền</li>
 
-<a href="#contact">
-Liên hệ
-</a>
+                </ul>
 
+            </div>
 
-</nav>
+            <button id="toggleAboutBtn">
 
+                Ẩn/Hiện giới thiệu
 
+            </button>
 
+        </section>
 
 
 
 
 
+        <!-- Phong cách -->
 
-<main>
+        <section id="style-guide">
 
+            <h2>
+                Bảng phong cách thiết kế
+            </h2>
 
+            <div class="style-box">
 
+                <h3>
+                    Chủ đề: Ẩm thực Việt Nam
+                </h3>
 
+                <p>
 
-<section id="home">
+                    Thiết kế lấy cảm hứng từ món ăn,
+                    văn hóa và màu sắc Việt Nam.
 
+                </p>
 
-<img
+                <img
+                    class="style-image"
+                    src="../img/detail-1.jpg"
+                    alt="Món ăn"
+                >
 
-class="hero"
+                <img
+                    class="style-image"
+                    src="../img/detail-2.jpg"
+                    alt="Ẩm thực"
+                >
 
-src="../img/hero.jpg"
+            </div>
 
-alt="Ẩm thực Việt Nam"
+        </section>
 
->
 
 
 
-<p class="description">
 
+        <!-- Gallery -->
 
-Ẩm thực Việt Nam nổi tiếng với sự đa dạng,
-hương vị đặc trưng và nét văn hóa riêng.
+        <section id="gallery">
 
+            <h2>
+                Thư viện ảnh
+            </h2>
 
-</p>
+            <!-- Tìm kiếm -->
 
+            <input
+                id="searchInput"
+                class="gallery-search"
+                type="text"
+                placeholder="Tìm kiếm hình ảnh..."
+            >
 
+            <!-- Bộ lọc -->
 
-</section>
+            <div class="filter-buttons">
 
+                <button
+                    class="filter-btn"
+                    data-filter="all"
+                >
+                    Tất cả
+                </button>
 
+                <button
+                    class="filter-btn"
+                    data-filter="pho"
+                >
+                    Phở
+                </button>
 
+                <button
+                    class="filter-btn"
+                    data-filter="banhmi"
+                >
+                    Bánh mì
+                </button>
 
+                <button
+                    class="filter-btn"
+                    data-filter="dacsan"
+                >
+                    Đặc sản
+                </button>
 
+                <button
+                    class="filter-btn"
+                    data-filter="vanhoa"
+                >
+                    Văn hóa
+                </button>
 
+            </div>
 
+            <div class="gallery">
 
+                <figure
+                    class="gallery-item search-item"
+                    data-category="pho"
+                >
 
-<section id="about">
+                    <img
+                        src="../img/hero.jpg"
+                        alt="Phở Việt Nam"
+                    >
 
+                    <figcaption>
+                        Phở truyền thống Việt Nam
+                    </figcaption>
 
-<h2>
-Giới thiệu
-</h2>
+                </figure>
 
 
 
-<div id="aboutContent" class="topic-list search-item">
 
 
-<p>
+                <figure
+                    class="gallery-item search-item"
+                    data-category="banhmi"
+                >
 
-Website Ẩm thực Việt Nam giúp khám phá
-những món ăn truyền thống Việt Nam.
+                    <img
+                        src="../img/detail-1.jpg"
+                        alt="Bánh mì Việt Nam"
+                    >
 
-</p>
+                    <figcaption>
+                        Bánh mì Việt Nam
+                    </figcaption>
 
+                </figure>
 
-<ul>
 
-<li>Phở truyền thống</li>
 
-<li>Bánh mì Việt Nam</li>
 
-<li>Món ăn vùng miền</li>
 
-</ul>
+                <figure
+                    class="gallery-item search-item"
+                    data-category="dacsan"
+                >
 
+                    <img
+                        src="../img/detail-2.jpg"
+                        alt="Đặc sản Việt Nam"
+                    >
 
-</div>
+                    <figcaption>
+                        Đặc sản Việt Nam
+                    </figcaption>
 
+                </figure>
 
 
-<button id="toggleAboutBtn">
 
-Ẩn/Hiện giới thiệu
 
-</button>
 
+                <figure
+                    class="gallery-item search-item"
+                    data-category="vanhoa"
+                >
 
-</section>
+                    <img
+                        src="../img/detail-3.jpg"
+                        alt="Văn hóa ẩm thực"
+                    >
 
+                    <figcaption>
+                        Văn hóa ẩm thực Việt Nam
+                    </figcaption>
 
+                </figure>
 
+            </div>
 
+        </section>
 
 
 
 
 
-<section id="style-guide">
+        <!-- Liên hệ -->
 
+        <section id="contact">
 
-<h2>
-Bảng phong cách thiết kế
-</h2>
+            <h2>
+                Liên hệ
+            </h2>
 
+            <form class="contact-form">
 
+                <input
+                    type="text"
+                    placeholder="Họ tên"
+                >
 
-<div class="style-box search-item">
+                <input
+                    type="email"
+                    placeholder="Email"
+                >
 
+                <textarea
+                    placeholder="Nội dung"
+                ></textarea>
 
-<h3>
-Chủ đề: Ẩm thực Việt Nam
-</h3>
+                <button
+                    type="submit"
+                    class="cta"
+                >
+                    Gửi thông tin
+                </button>
 
+            </form>
 
-<p>
+        </section>
 
-Thiết kế lấy cảm hứng từ món ăn,
-văn hóa và màu sắc Việt Nam.
+    </main>
 
-</p>
 
 
 
 
-<img
+    <footer>
 
-class="style-image"
+        <p>
 
-src="../img/detail-1.jpg"
+            © 2026 MyWeb - Ẩm thực Việt Nam
 
-alt="Phở"
+        </p>
 
->
+    </footer>
 
 
 
 
-<img
 
-class="style-image"
-
-src="../img/detail-2.jpg"
-
-alt="Ẩm thực"
-
->
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section id="gallery">
-
-
-<h2>
-Thư viện ảnh
-</h2>
-
-
-
-<div class="gallery">
-
-
-<figure class="search-item">
-
-
-<img 
-src="../img/hero.jpg"
-alt="Món ăn truyền thống">
-
-<figcaption>
-Món ăn truyền thống
-</figcaption>
-
-</figure>
-
-
-
-
-
-<figure class="search-item">
-
-
-<img 
-src="../img/detail-1.jpg"
-alt="Phở">
-
-<figcaption>
-Phở
-</figcaption>
-
-</figure>
-
-
-
-
-
-
-<figure class="search-item">
-
-
-<img 
-src="../img/detail-2.jpg"
-alt="Bữa cơm Việt Nam">
-
-<figcaption>
-Bữa  Việt Nam
-</figcaption>
-
-</figure>
-
-
-
-
-
-<figure class="search-item">
-
-
-<img 
-src="../img/detail-3.jpg"
-alt="Bánh Mì Việt Nam">
-
-<figcaption>
-Bánh Mì Việt Nam
-</figcaption>
-
-</figure>
-
-
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section id="contact">
-
-
-<h2>
-Liên hệ
-</h2>
-
-
-
-<form class="contact-form">
-
-
-<input 
-type="text" 
-placeholder="Họ tên">
-
-
-
-<input 
-type="email" 
-placeholder="Email">
-
-
-
-<textarea 
-placeholder="Nội dung">
-</textarea>
-
-
-
-<button class="cta" type="submit">
-
-Gửi thông tin
-
-</button>
-
-
-</form>
-
-
-</section>
-
-
-
-
-
-
-
-</main>
-
-
-
-
-
-
-
-
-
-<footer>
-
-
-<p>
-
-© 2026 MyWeb - Ẩm thực Việt Nam
-
-</p>
-
-
-</footer>
-
-
-
-
-
-
-
-
-<script src="../js/script.js"></script>
-
+    <script src="../js/script.js"></script>
 
 </body>
-
 
 </html>
