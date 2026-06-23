@@ -43,7 +43,7 @@ body {
 
 /* Tiêu đề */
 
-#main-title {
+#mainTitle {
 
     color: #FFD166;
 
@@ -184,6 +184,30 @@ main {
 .topic-list li {
 
     margin: 10px;
+
+}
+
+
+
+
+
+/* Nút ẩn hiện */
+
+#toggleAboutBtn {
+
+    margin-top: 15px;
+
+}
+
+
+
+
+
+/* Ẩn nội dung bằng JavaScript */
+
+.hidden {
+
+    display: none !important;
 
 }
 
@@ -344,7 +368,9 @@ figcaption {
 
 /* Nút */
 
-.cta {
+.cta,
+#helloBtn,
+#toggleAboutBtn {
 
     background-color: #E63946;
 
@@ -366,7 +392,9 @@ figcaption {
 
 
 
-.cta:hover {
+.cta:hover,
+#helloBtn:hover,
+#toggleAboutBtn:hover {
 
     background-color: #C1121F;
 
@@ -428,12 +456,13 @@ footer {
 
 
 
+
 /* Điện thoại */
 
 @media (max-width: 600px) {
 
 
-    #main-title {
+    #mainTitle {
 
         font-size: 28px;
 
@@ -467,13 +496,11 @@ footer {
 
 
 
-
     .hero {
 
         width: 100%;
 
     }
-
 
 
 
@@ -498,8 +525,5 @@ footer {
         width: 100%;
 
     }
-.hidden {
-    display: none;
-}
 
 }
