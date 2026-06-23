@@ -5,7 +5,6 @@
 }
 
 
-
 /* Toàn trang */
 
 body {
@@ -26,16 +25,6 @@ body {
 
 
 
-html {
-
-    scroll-behavior: smooth;
-
-}
-
-
-
-
-
 /* Header */
 
 .site-header {
@@ -49,8 +38,6 @@ html {
     padding: 30px;
 
 }
-
-
 
 
 
@@ -68,29 +55,23 @@ html {
 
 
 
-
-
 /* Chọn chủ đề */
 
 #themeSelect {
 
-    padding: 10px;
+    margin-top: 15px;
 
-    margin: 15px;
+    padding: 10px;
 
     border-radius: 8px;
 
     border: none;
 
-    font-size: 15px;
-
 }
 
 
 
-
-
-/* Nút menu */
+/* Menu */
 
 .menu-toggle {
 
@@ -102,21 +83,15 @@ html {
 
     border: none;
 
-    padding: 12px 25px;
+    padding: 12px 20px;
 
     border-radius: 8px;
 
     cursor: pointer;
 
-    font-size: 16px;
-
 }
 
 
-
-
-
-/* Menu */
 
 .main-menu {
 
@@ -126,15 +101,7 @@ html {
 
     text-align: center;
 
-    display: flex;
-
-    justify-content: center;
-
-    gap: 20px;
-
 }
-
-
 
 
 
@@ -144,7 +111,7 @@ html {
 
     text-decoration: none;
 
-    padding: 10px 15px;
+    margin: 15px;
 
     font-weight: bold;
 
@@ -152,17 +119,11 @@ html {
 
 
 
-
-
 .main-menu a:hover {
 
     color: #FFD166;
 
-    text-decoration: underline;
-
 }
-
-
 
 
 
@@ -180,199 +141,205 @@ main {
 
 
 
-
-
-section {
-
-    margin-top: 30px;
-
-}
-
-
-
-
-
-/* Ảnh bìa */
+/* Ảnh chính */
 
 .hero {
 
     width: 100%;
 
-    max-width: 900px;
+    max-width:900px;
 
-    display: block;
+    display:block;
 
-    margin: 20px auto;
+    margin:20px auto;
 
-    border-radius: 12px;
+    border-radius:12px;
 
 }
-
-
 
 
 
 .description {
 
-    text-align: center;
+    text-align:center;
 
-    font-size: 18px;
-
-}
-
-
-
-
-
-/* Giới thiệu */
-
-#about {
-
-    background-color: white;
-
-    padding: 20px;
-
-    border-radius: 10px;
+    font-size:18px;
 
 }
 
 
+
+/* About */
+
+#about,
+#style-guide,
+#gallery,
+#contact {
+
+    background:white;
+
+    padding:20px;
+
+    margin-top:20px;
+
+    border-radius:10px;
+
+}
 
 
 
 .topic-list {
 
-    border: 2px solid #8B0000;
+    border:2px solid #8B0000;
 
-    padding: 20px;
+    padding:20px;
 
-    border-radius: 10px;
-
-}
-
-
-
-
-
-.topic-list li {
-
-    margin: 10px;
+    border-radius:10px;
 
 }
-
-
 
 
 
 .hidden {
 
-    display: none;
+    display:none;
 
 }
 
 
 
-
-
-/* Phong cách */
-
-#style-guide {
-
-    background-color: white;
-
-    padding: 20px;
-
-    border-radius: 10px;
-
-}
-
-
-
-
+/* Style */
 
 .style-box {
 
-    text-align: center;
+    text-align:center;
 
 }
-
-
 
 
 
 .style-image {
 
-    width: 45%;
+    width:45%;
 
-    margin: 10px;
+    margin:10px;
 
-    border-radius: 10px;
+    border-radius:10px;
 
 }
-
-
 
 
 
 /* Gallery */
 
+
+.gallery-search {
+
+    display:block;
+
+    width:100%;
+
+    max-width:400px;
+
+    margin:20px auto;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    font-size:16px;
+
+}
+
+
+
+.filter-buttons {
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.filter-btn {
+
+    background:#E63946;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 18px;
+
+    margin:5px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+}
+
+
+
+.filter-btn:hover {
+
+    background:#C1121F;
+
+}
+
+
+
 .gallery {
 
-    display: flex;
+    display:flex;
 
-    justify-content: center;
+    gap:20px;
 
-    gap: 20px;
+    justify-content:center;
 
-    flex-wrap: wrap;
-
-}
-
-
-
-
-
-.gallery figure {
-
-    width: 300px;
-
-    margin: 0;
-
-    background-color: white;
-
-    border-radius: 10px;
-
-    overflow: hidden;
+    flex-wrap:wrap;
 
 }
 
 
 
+.gallery-item {
 
+    width:300px;
 
-.gallery img {
+    background:white;
 
-    width: 100%;
+    border-radius:10px;
 
-    height: 220px;
+    overflow:hidden;
 
-    object-fit: cover;
+    box-shadow:0 2px 8px #ccc;
 
 }
 
 
+
+.gallery-item img {
+
+    width:100%;
+
+    display:block;
+
+}
 
 
 
 figcaption {
 
-    text-align: center;
+    text-align:center;
 
-    padding: 10px;
+    padding:10px;
 
 }
-
-
 
 
 
@@ -380,90 +347,63 @@ figcaption {
 
 .contact-form {
 
-    max-width: 500px;
+    max-width:500px;
 
-    margin: auto;
+    margin:auto;
 
-    display: flex;
+    display:flex;
 
-    flex-direction: column;
+    flex-direction:column;
 
-    gap: 12px;
+    gap:12px;
 
 }
-
-
 
 
 
 .contact-form input,
 .contact-form textarea {
 
+    padding:12px;
 
-    padding: 12px;
+    border-radius:8px;
 
-    border: 1px solid #ccc;
+    border:1px solid #ccc;
 
-    border-radius: 8px;
-
-    font-size: 16px;
+    font-size:16px;
 
 }
-
-
 
 
 
 .contact-form textarea {
 
-    height: 120px;
+    height:120px;
 
 }
 
 
 
-
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-
-
-    outline: none;
-
-    border-color: #8B0000;
-
-}
-
-
-
-
-
-/* Nút */
+/* Button */
 
 .cta,
 #helloBtn,
 #toggleAboutBtn {
 
 
-    background-color: #E63946;
+    background:#E63946;
 
-    color: white;
+    color:white;
 
-    border: none;
+    border:none;
 
-    padding: 12px 25px;
+    padding:12px 25px;
 
-    border-radius: 8px;
+    border-radius:8px;
 
-    cursor: pointer;
-
-    font-size: 16px;
-
-    transition: 0.3s;
+    cursor:pointer;
 
 }
-
-
 
 
 
@@ -471,159 +411,102 @@ figcaption {
 #helloBtn:hover,
 #toggleAboutBtn:hover {
 
-
-    background-color: #C1121F;
-
-    transform: scale(1.05);
+    background:#C1121F;
 
 }
 
 
+
+/* Form message */
+
+#formMessage {
+
+    text-align:center;
+
+    font-weight:bold;
+
+}
 
 
 
 /* Footer */
 
+
 footer {
 
+    background:#5A0000;
 
-    background-color: #5A0000;
+    color:white;
 
-    color: white;
+    text-align:center;
 
-    text-align: center;
+    padding:20px;
 
-    padding: 20px;
-
-    margin-top: 30px;
+    margin-top:30px;
 
 }
 
 
 
+/* Dark mode */
 
-
-/* Chủ đề tối */
 
 .dark-mode {
 
+    background:#111827;
 
-    background-color: #111827;
-
-    color: #f8fafc;
-
-}
-
-
-
-
-
-.dark-mode .site-header {
-
-
-    background-color: #020617;
+    color:#F8FAFC;
 
 }
-
-
 
 
 
 .dark-mode #about,
 .dark-mode #style-guide,
-.dark-mode .gallery figure {
+.dark-mode #gallery,
+.dark-mode #contact,
+.dark-mode .gallery-item {
 
+    background:#1F2937;
 
-    background-color: #1e293b;
-
-    color: white;
-
-}
-
-
-
-
-
-.dark-mode .main-menu,
-.dark-mode footer {
-
-
-    background-color: #020617;
+    color:white;
 
 }
 
 
 
+/* Warm mode */
 
-
-
-
-/* Chủ đề ấm */
 
 .warm-mode {
 
-
-    background-color: #fff7ed;
-
-    color: #7c2d12;
+    background:#FFF7ED;
 
 }
-
-
-
-
-
-.warm-mode .site-header {
-
-
-    background-color: #c2410c;
-
-}
-
-
 
 
 
 .warm-mode #about,
 .warm-mode #style-guide,
-.warm-mode .gallery figure {
+.warm-mode #gallery,
+.warm-mode #contact {
 
-
-    background-color: #ffedd5;
-
-}
-
-
-
-
-
-/* Tablet */
-
-@media (max-width:900px){
-
-
-    .gallery figure {
-
-        width:45%;
-
-    }
-
-
-    .style-image {
-
-        width:70%;
-
-    }
-
+    background:#FFF1D6;
 
 }
 
 
 
+/* Mobile menu */
 
 
+.main-menu.active {
 
-/* Điện thoại */
+    display:flex;
+
+}
+
+
 
 @media(max-width:600px){
 
@@ -636,10 +519,7 @@ footer {
 
 
 
-
-
     .menu-toggle {
-
 
         display:inline-block;
 
@@ -649,47 +529,27 @@ footer {
 
 
 
-
-
     .main-menu {
-
 
         display:none;
 
         flex-direction:column;
 
-        gap:5px;
-
     }
-
-
-
-
-
-    .main-menu.active {
-
-
-        display:flex;
-
-    }
-
-
 
 
 
     .main-menu a {
 
-
         display:block;
+
+        margin:8px;
 
     }
 
 
 
-
-
     main {
-
 
         width:95%;
 
@@ -697,21 +557,7 @@ footer {
 
 
 
-
-
-    .hero {
-
-
-        width:100%;
-
-    }
-
-
-
-
-
     .gallery {
-
 
         flex-direction:column;
 
@@ -719,86 +565,18 @@ footer {
 
 
 
-
-
-    .gallery figure {
-
+    .gallery-item {
 
         width:100%;
 
     }
-
-
 
 
 
     .style-image {
 
-
         width:100%;
 
     }
-
-
-}
-#searchInput {
-
-
-    padding:12px 15px;
-
-    width:300px;
-
-    max-width:90%;
-
-    border-radius:8px;
-
-    border:none;
-
-    margin:15px;
-
-    font-size:16px;
-
-
-}
-.filter-buttons{
-
-    text-align:center;
-
-    margin:20px 0;
-
-}
-
-
-.filter-btn{
-
-    padding:10px 15px;
-
-    margin:5px;
-
-    border:none;
-
-    border-radius:8px;
-
-    background:#E63946;
-
-    color:white;
-
-    cursor:pointer;
-
-}
-
-
-.filter-btn:hover{
-
-    background:#C1121F;
-
-}
-#formMessage{
-
-    text-align:center;
-
-    font-weight:bold;
-
-    margin-top:15px;
 
 }
